@@ -1,0 +1,29 @@
+<div class="row mt-2 mx-2">
+  <div class="col-12">
+    <button class="btn btn-warning" style="float:right;" (click)="onDialogOpen()">Add New Property</button>
+  </div>
+</div>
+<div class="container my-2">
+  <div class="row border border-top-1 border-left-1 border-right-1">
+    <div class="col-sm">
+      Name
+    </div>
+    <div class="col-sm">
+      Description
+    </div>
+    <div class="col-sm">
+      Size
+    </div>
+  </div>
+  <div class="row border border-top-0 border-left-1 border-right-1" *ngFor="let item of propertyList">
+    <div class="col-sm">
+      {{item.name}}
+    </div>
+    <div class="col-sm">
+      {{item.description}}
+    </div>
+    <div class="col-sm">
+      {{item.size}}
+    </div>
+  </div>
+</div>
